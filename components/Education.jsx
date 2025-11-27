@@ -5,7 +5,7 @@ export default function Education() {
   const education = [
     {
       degree: "D4 Software Engineering Technology",
-      school: "Institut Teknologi Del (IT Del)",
+      school: "Del Institute of Technology (IT Del)",
       period: "2023 - now",
       details: "GPA: 3.44 / 4.00 || Focus on Web Development and Software Engineering",
     },

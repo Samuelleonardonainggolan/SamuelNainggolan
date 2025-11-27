@@ -14,12 +14,12 @@ export default function About() {
           <div className="md:col-span-2 space-y-4">
             <h2 className="text-4xl font-bold mb-6">About Me</h2>
             <p className="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
-              Hi! I'm Samuel Leonardo Nainggolan, a passionate full-stack developer based in Balige. With a strong
+              Hi! I'm Samuel Leonardo Nainggolan, a passionate software developer based in Balige. With a strong
               foundation in both frontend and backend technologies, I specialize in building scalable web and mobile
               applications that solve real-world problems.
             </p>
             <p className="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
-              I graduated with a degree in Informatics Engineering in 2023 and have since worked on diverse projects
+              I graduated with a degree in Software Engineering Technology in 2023 and have since worked on diverse projects
               including environmental reporting platforms, educational systems, e-commerce solutions, and more. I'm
               constantly learning and exploring new technologies to stay at the forefront of web development.
             </p>
@@ -37,13 +37,13 @@ export default function About() {
                 <span className="text-slate-600 dark:text-slate-400">Location:</span>
                 <span className="font-semibold">Balige, Indonesia</span>
               </p>
-              <p className="flex justify-between">
+              {/* <p className="flex justify-between">
                 <span className="text-slate-600 dark:text-slate-400">Experience:</span>
                 <span className="font-semibold">2+ Years</span>
-              </p>
+              </p> */}
               <p className="flex justify-between">
                 <span className="text-slate-600 dark:text-slate-400">Education:</span>
-                <span className="font-semibold">IT Del University</span>
+                <span className="font-semibold">IT Del</span>
               </p>
               <p className="flex justify-between">
                 <span className="text-slate-600 dark:text-slate-400">Email:</span>

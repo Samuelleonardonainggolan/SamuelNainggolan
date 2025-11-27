@@ -1,8 +1,8 @@
 import "./globals.css"
 
 export const metadata = {
-  title: "Samuel Leonardo — Software Engineering",
-  description: "Portfolio — Samuel Leonardo Nainggolan",
+  title: "Samuel Leonardo Nainggolan",
+  description: "Samuel Leonardo Nainggolan",
 }
 
 export default function RootLayout({ children }) {
