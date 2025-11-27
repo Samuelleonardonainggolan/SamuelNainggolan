@@ -68,11 +68,11 @@ export default function Hero() {
 
           {/* Right Image */}
           <div className="relative flex justify-center z-10">
-            <div className="relative w-80 h-80 transform -translate-y-6">
+            <div className="relative w-80 h-80">
               <div className="absolute inset-0 bg-gradient-to-br from-cyan-500 to-purple-600 rounded-3xl blur-2xl opacity-30 animate-blob" />
               <div className="relative bg-white dark:bg-slate-800 rounded-3xl overflow-hidden shadow-2xl border border-cyan-100 dark:border-slate-700">
                 <img
-                  src="/11423001_SamuelLeonardoNainggolan.png"
+                  src="/11423001_SamuelLeonardoNainggolan.png?height=320&width=320&query=professional-developer"
                   alt="Profile"
                   className="w-full h-full object-cover"
                 />
