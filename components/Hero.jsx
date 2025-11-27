@@ -36,7 +36,7 @@ export default function Hero() {
             <div>
               <h1 className="text-5xl md:text-5xl font-bold leading-tight">
                 <span className="bg-gradient-to-r from-cyan-600 to-purple-600 bg-clip-text text-transparent">
-                  Samuel Nainggolan
+                  Samuel Leonardo Nainggolan
                 </span>
               </h1>
               <div className="h-8 mt-4 text-2xl font-semibold text-cyan-600 dark:text-cyan-400">

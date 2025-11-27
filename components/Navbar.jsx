@@ -24,15 +24,15 @@ export default function Navbar() {
     localStorage.setItem("theme", newTheme)
   }
 
-  const navLinks = [
-    { href: "#about", label: "About" },
-    { href: "#experience", label: "Experience" },
-    { href: "#projects", label: "Projects" },
-    { href: "#skills", label: "Skills" },
-    { href: "#education", label: "Education" },
-    { href: "#certificates", label: "Certificates" },
-    { href: "#contact", label: "Contact" },
-  ]
+  // const navLinks = [
+  //   { href: "#about", label: "About" },
+  //   { href: "#experience", label: "Experience" },
+  //   { href: "#projects", label: "Projects" },
+  //   { href: "#skills", label: "Skills" },
+  //   { href: "#education", label: "Education" },
+  //   { href: "#certificates", label: "Certificates" },
+  //   { href: "#contact", label: "Contact" },
+  // ]
 
   const socialLinks = [
     {
@@ -87,13 +87,13 @@ export default function Navbar() {
           <div className="w-10 h-10 rounded-full bg-gradient-to-br from-cyan-400 to-purple-600 flex items-center justify-center text-white font-bold">
             SLN
           </div>
-          <span className="font-bold text-lg bg-gradient-to-r from-cyan-500 to-purple-600 bg-clip-text text-transparent">
+          {/* <span className="font-bold text-lg bg-gradient-to-r from-cyan-500 to-purple-600 bg-clip-text text-transparent">
             Samuel Leonardo Nainggolan
-          </span>
+          </span> */}
         </div>
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center gap-8">
+        {/* <div className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
             <a
               key={link.href}
@@ -103,7 +103,7 @@ export default function Navbar() {
               {link.label}
             </a>
           ))}
-        </div>
+        </div> */}
 
         {/* Actions */}
         <div className="flex items-center gap-3">

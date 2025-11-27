@@ -25,20 +25,20 @@ export default function Page() {
     return () => window.removeEventListener("scroll", onScroll)
   }, [])
 
-  return (
-    <>
-      <Navbar />
-      <main className="container mx-auto px-6 md:px-12">
-        <Hero />
-        <About />
-        <Experience />
-        <Projects />
-        <Skills />
-        <Education />
-        <Certificates />
-        <Contact />
-      </main>
-      <BackToTop />
-    </>
-  )
+  // return (
+  //   <>
+  //     <Navbar />
+  //     <main className="container mx-auto px-6 md:px-12">
+  //       <Hero />
+  //       <About />
+  //       <Experience />
+  //       <Projects />
+  //       <Skills />
+  //       <Education />
+  //       <Certificates />
+  //       <Contact />
+  //     </main>
+  //     <BackToTop />
+  //   </>
+  // )
 }
