@@ -71,7 +71,7 @@ export default function Hero() {
             <div className="relative w-80 h-80">
               <div className="absolute inset-0 bg-gradient-to-br from-cyan-500 to-purple-600 rounded-3xl blur-2xl opacity-30 animate-blob" />
               <div className="relative bg-white dark:bg-slate-800 rounded-3xl overflow-hidden shadow-2xl border border-cyan-100 dark:border-slate-700">
-                <Image src="/11423001_SamuelLeonardoNainggolan.png" width={320} height={320} alt="Profile" />
+                <Image src="/Profile.png" width={320} height={320} alt="Profile" />
               </div>
             </div>
           </div>
