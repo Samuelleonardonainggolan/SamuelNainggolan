@@ -1,29 +1,24 @@
+"use client"
 import "./globals.css"
-
-export const metadata = {
-  title: "Samuel Leonardo — Software Engineering",
-  description: "Portfolio — Samuel Leonardo Nainggolan",
-}
+import { useEffect, useState } from "react"
 
 export default function RootLayout({ children }) {
+  const [isDark, setIsDark] = useState(false)
+
+  useEffect(() => {
+    const theme = localStorage.getItem("theme") || "light"
+    setIsDark(theme === "dark")
+    document.documentElement.setAttribute("data-theme", theme)
+  }, [])
+
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
-        {/* Devicon Icons */}
-        <link
-          rel="stylesheet"
-          href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
-        />
-
-        {/* Favicon (opsional, jika ingin ditambah) */}
-        {/* <link rel="icon" href="/favicon.ico" /> */}
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#00a8cc" />
       </head>
-
-      <body className="bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-200">
-        {/* Progress bar container */}
+      <body>
         <div id="progress"></div>
-
-        {/* Page Content */}
         {children}
       </body>
     </html>
