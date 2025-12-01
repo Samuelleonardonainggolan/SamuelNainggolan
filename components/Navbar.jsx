@@ -64,6 +64,19 @@ export default function Navbar() {
     // },
     {
       icon: (
+        <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M7 2C4.243 2 2 4.243 2 7v10c0 2.757 2.243 5 5 5h10c2.757 
+            0 5-2.243 5-5V7c0-2.757-2.243-5-5-5H7zm10 2a3 3 0 013 3v10a3 
+            3 0 01-3 3H7a3 3 0 01-3-3V7a3 3 0 013-3h10zm-5 3a5 
+            5 0 100 10 5 5 0 000-10zm6.5-.75a1.25 1.25 0 11-2.5 
+            0 1.25 1.25 0 012.5 0z" />
+        </svg>
+      ),
+      label: "Instagram",
+      href: "https://www.instagram.com/sam.leonard0/",
+    },
+    {
+      icon: (
         <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
           <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
         </svg>
@@ -75,21 +88,22 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed w-full z-50 transition-all duration-300 ${
-        scrolled
-          ? "backdrop-blur-20 bg-white/95 shadow-md dark:bg-slate-900/95 dark:border-b dark:border-slate-800"
-          : "bg-transparent"
-      }`}
+      className={`fixed w-full z-50 transition-all duration-300 ${scrolled
+        ? "backdrop-blur-20 bg-white/95 shadow-md dark:bg-slate-900/95 dark:border-b dark:border-slate-800"
+        : "bg-transparent"
+        }`}
     >
       <nav className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center gap-2">
-          <div className="w-10 h-10 rounded-full bg-gradient-to-br from-cyan-400 to-purple-600 flex items-center justify-center text-white font-bold">
+          <div className="w-10 h-10 rounded-full bg-slate-900 flex items-center justify-center text-white font-bold">
             SLN
           </div>
-          {/* <span className="font-bold text-lg bg-gradient-to-r from-cyan-500 to-purple-600 bg-clip-text text-transparent">
+
+          <span className="font-bold text-lg text-black dark:text-white">
             Samuel Leonardo Nainggolan
-          </span> */}
+          </span>
+
         </div>
 
         {/* Desktop Navigation */}

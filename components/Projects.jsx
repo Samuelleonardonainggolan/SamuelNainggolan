@@ -4,20 +4,25 @@ import { motion, AnimatePresence } from "framer-motion"
 
 const projects = [
   {
-    title: "Environmental Reporting Platform",
-    desc: "A reporting system allowing citizens to submit and monitor environmental issues, enabling local government to manage and respond efficiently.",
-    tags: ["React", "Flutter", "Express.js", "MySQL"],
-    image: "/environmental-reporting-platform-dashboard.jpg?height=240&width=320&query=environmental-reporting",
+    title: "Pemesanan Tiket Konser - Ticketist",
+    desc: "A Java-based concert ticket reservation system developed with FXML and Scene Builder. The platform supports two roles: Audience and Admin. Audience can register, log in, browse events and artists, select ticket categories, book seats, view payment status, and make payments. Admins are provided with full CRUD management for events, artists, areas, and ticket categories, as well as payment approval workflows. The system is built with an OOP structure documenting Use Case Diagrams, Class Diagrams, and a fully relational MySQL database.",
+    tags: ["Java", "FXML", "Scene Builder", "MySQL", "OOP"],
+    image: "/Picture11.jpg?height=240&width=320&query=environmental-reporting",
     images: [
-      "/environmental-reporting-platform-dashboard.jpg?height=400&width=600&query=environmental-reporting-1",
-      "/environmental-reporting-platform-dashboard.jpg?height=400&width=600&query=environmental-reporting-2",
-      "/environmental-reporting-platform-dashboard.jpg?height=400&width=600&query=environmental-reporting-3",
+      "/Picture10.jpg?height=400&width=600&query=environmental-reporting-1",
+      "/Picture12.jpg?height=400&width=600&query=environmental-reporting-1",
+      "/Picture13.jpg?height=400&width=600&query=environmental-reporting-1",
+      "/Picture14.jpg?height=400&width=600&query=environmental-reporting-1",
+      "/Picture15.jpg?height=400&width=600&query=environmental-reporting-1",
+      "/Picture16.jpg?height=400&width=600&query=environmental-reporting-1",
+      "/Picture17.jpg?height=400&width=600&query=environmental-reporting-1",
+      "/Picture18.jpg?height=400&width=600&query=environmental-reporting-1",
     ],
   },
   {
     title: "Sistem Informasi Harga Pasar Toba Berbasis Web dan Mobile",
-    desc: "A web-based system for managing student records, financial tracking, and academic reports for educational institutions.",
-    tags: ["Flutter","Dart", "Laravel", "Golang", "MySQL", "Postman"],
+    desc: "A web and mobile-based market price information system designed for traditional markets in Toba Regency. This platform enables market administrators to record, update, and monitor the daily prices of essential commodities. It includes real-time price tracking, category-based filtering, historical price graphs, user-specific market access, and a mobile app for fast on-site data entry. Built with Flutter and Golang using secure JWT authentication and REST API integration.",
+    tags: ["Flutter", "Dart", "Laravel", "Golang", "REST API", "MySQL", "Postman"],
     image: "/Screenshot 2025-11-26 092428.png?height=240&width=320&query=education-system",
     images: [
       "/Screenshot 2025-11-26 092428.png?height=400&width=800&query=education-system-1",
@@ -179,12 +184,12 @@ function ProjectModal({ project, isOpen, onClose }) {
               >
                 GitHub
               </a>
-              <a
+              {/* <a
                 href="#"
                 className="flex-1 px-3 sm:px-4 py-2 border border-cyan-500 text-cyan-600 dark:text-cyan-400 font-semibold rounded-lg hover:bg-cyan-50 dark:hover:bg-slate-700 transition text-center text-xs sm:text-sm"
               >
                 Live Demo
-              </a>
+              </a> */}
             </div>
           </div>
         </motion.div>

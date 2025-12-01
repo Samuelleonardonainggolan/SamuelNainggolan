@@ -35,7 +35,7 @@ export default function Hero() {
           <div className="space-y-8 z-10">
             <div>
               <h1 className="text-5xl md:text-5xl font-bold leading-tight">
-                <span className="bg-gradient-to-r from-cyan-600 to-black-600 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-cyan-600 to-purple-600 bg-clip-text text-transparent">
                   Samuel Leonardo Nainggolan
                 </span>
               </h1>

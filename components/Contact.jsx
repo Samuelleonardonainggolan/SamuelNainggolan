@@ -109,7 +109,7 @@ export default function Contact() {
               viewport={{ once: true }}
               className="space-y-4"
             >
-              <div className="bg-white dark:bg-slate-800 p-6 rounded-xl border border-slate-200 dark:border-slate-700 hover:border-cyan-500 dark:hover:border-cyan-400 transition">
+              {/* <div className="bg-white dark:bg-slate-800 p-6 rounded-xl border border-slate-200 dark:border-slate-700 hover:border-cyan-500 dark:hover:border-cyan-400 transition">
                 <p className="text-3xl mb-3">📞</p>
                 <h4 className="font-bold text-slate-900 dark:text-white mb-2">Available For</h4>
                 <ul className="space-y-2 text-sm text-slate-600 dark:text-slate-400">
@@ -118,7 +118,7 @@ export default function Contact() {
                   <li>✓ Consulting</li>
                   <li>✓ Partnerships</li>
                 </ul>
-              </div>
+              </div> */}
 
               <div className="bg-white dark:bg-slate-800 p-6 rounded-xl border border-slate-200 dark:border-slate-700 hover:border-cyan-500 dark:hover:border-cyan-400 transition">
                 <p className="text-3xl mb-3">🚀</p>

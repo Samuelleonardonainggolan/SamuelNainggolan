@@ -19,9 +19,9 @@ export default function About() {
               applications that solve real-world problems.
             </p>
             <p className="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
-              I graduated with a degree in Software Engineering Technology in 2023 and have since worked on diverse projects
-              including environmental reporting platforms, educational systems, e-commerce solutions, and more. I'm
-              constantly learning and exploring new technologies to stay at the forefront of web development.
+              I am currently pursuing a degree in Software Engineering Technology and actively developing my skills through real-world projects. 
+              I’ve worked on various platforms including environmental reporting systems, educational applications, e-commerce solutions, and more. 
+              I’m continuously learning and exploring new technologies to stay at the forefront of modern web development.
             </p>
           </div>
 
