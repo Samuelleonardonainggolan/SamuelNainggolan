@@ -24,15 +24,15 @@ export default function Navbar() {
     localStorage.setItem("theme", newTheme)
   }
 
-  // const navLinks = [
-  //   { href: "#about", label: "About" },
-  //   { href: "#experience", label: "Experience" },
-  //   { href: "#projects", label: "Projects" },
-  //   { href: "#skills", label: "Skills" },
-  //   { href: "#education", label: "Education" },
-  //   { href: "#certificates", label: "Certificates" },
-  //   { href: "#contact", label: "Contact" },
-  // ]
+  const navLinks = [
+    { href: "#about", label: "About" },
+    { href: "#experience", label: "Experience" },
+    { href: "#projects", label: "Projects" },
+    { href: "#skills", label: "Skills" },
+    { href: "#education", label: "Education" },
+    { href: "#certificates", label: "Certificates" },
+    { href: "#contact", label: "Contact" },
+  ]
 
   const socialLinks = [
     {
@@ -93,7 +93,7 @@ export default function Navbar() {
         </div>
 
         {/* Desktop Navigation */}
-        {/* <div className="hidden md:flex items-center gap-8">
+        <div className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
             <a
               key={link.href}
@@ -103,7 +103,7 @@ export default function Navbar() {
               {link.label}
             </a>
           ))}
-        </div> */}
+        </div>
 
         {/* Actions */}
         <div className="flex items-center gap-3">

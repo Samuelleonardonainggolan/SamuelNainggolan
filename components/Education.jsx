@@ -7,7 +7,7 @@ export default function Education() {
       degree: "D4 Software Engineering Technology",
       school: "Del Institute of Technology (IT Del)",
       period: "2023 - now",
-      details: "GPA: 3.44 / 4.00 || Focus on Web Development and Software Engineering",
+      details: "Focus on Web Development and Software Engineering",
     },
   ]
 

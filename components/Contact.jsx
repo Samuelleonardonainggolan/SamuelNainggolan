@@ -68,6 +68,19 @@ export default function Contact() {
                       {
                         icon: (
                           <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M7 2C4.243 2 2 4.243 2 7v10c0 2.757 2.243 5 5 5h10c2.757 
+            0 5-2.243 5-5V7c0-2.757-2.243-5-5-5H7zm10 2a3 3 0 013 3v10a3 
+            3 0 01-3 3H7a3 3 0 01-3-3V7a3 3 0 013-3h10zm-5 3a5 
+            5 0 100 10 5 5 0 000-10zm6.5-.75a1.25 1.25 0 11-2.5 
+            0 1.25 1.25 0 012.5 0z" />
+                          </svg>
+                        ),
+                        label: "Instagram",
+                        href: "https://www.instagram.com/sam.leonard0/",
+                      },
+                      {
+                        icon: (
+                          <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                             <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
                           </svg>
                         ),
