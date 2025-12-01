@@ -33,62 +33,71 @@ const projects = [
       "/Screenshot 2025-11-26 092935.png?height=400&width=800&query=education-system-6",
     ],
   },
-  // {
-  //   title: "E-Commerce Shoe Store",
-  //   desc: "A full-featured e-commerce platform with product catalog, shopping cart, checkout, and order management system.",
-  //   tags: ["Asp.NET", "C#", "JavaScript"],
-  //   image: "/ecommerce-shoe-store-platform.jpg?height=240&width=320&query=ecommerce-shoes",
-  //   images: [
-  //     "/ecommerce-shoe-store-platform.jpg?height=400&width=600&query=ecommerce-shoes-1",
-  //     "/ecommerce-shoe-store-platform.jpg?height=400&width=600&query=ecommerce-shoes-2",
-  //     "/ecommerce-shoe-store-platform.jpg?height=400&width=600&query=ecommerce-shoes-3",
-  //   ],
-  // },
-  // {
-  //   title: "Village Administration Website",
-  //   desc: "A village information portal with news management, citizen services, and administrative features using Laravel.",
-  //   tags: ["Laravel", "MySQL", "JavaScript"],
-  //   image: "/village-administration-website.jpg?height=240&width=320&query=village-website",
-  //   images: [
-  //     "/village-administration-website.jpg?height=400&width=600&query=village-website-1",
-  //     "/village-administration-website.jpg?height=400&width=600&query=village-website-2",
-  //     "/village-administration-website.jpg?height=400&width=600&query=village-website-3",
-  //   ],
-  // },
-  // {
-  //   title: "Campus Information System",
-  //   desc: "A mobile app replicating academic features with Flutter frontend and Laravel backend, integrated via REST API.",
-  //   tags: ["Flutter", "Laravel", "MySQL"],
-  //   image: "/campus-information-mobile-app.jpg?height=240&width=320&query=campus-app",
-  //   images: [
-  //     "/campus-information-mobile-app.jpg?height=400&width=600&query=campus-app-1",
-  //     "/campus-information-mobile-app.jpg?height=400&width=600&query=campus-app-2",
-  //     "/campus-information-mobile-app.jpg?height=400&width=600&query=campus-app-3",
-  //   ],
-  // },
-  // {
-  //   title: "Florist E-Commerce Website",
-  //   desc: "A dynamic florist business website with product showcase, WhatsApp integration, and admin content management.",
-  //   tags: ["Laravel", "MySQL", "JavaScript"],
-  //   image: "/florist-ecommerce-website.jpg?height=240&width=320&query=florist-shop",
-  //   images: [
-  //     "/florist-ecommerce-website.jpg?height=400&width=600&query=florist-shop-1",
-  //     "/florist-ecommerce-website.jpg?height=400&width=600&query=florist-shop-2",
-  //     "/florist-ecommerce-website.jpg?height=400&width=600&query=florist-shop-3",
-  //   ],
-  // },
 ]
 
 const tagColors = {
-  React: "bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200",
-  Flutter: "bg-purple-100 text-purple-700 dark:bg-purple-900 dark:text-purple-200",
-  "Express.js": "bg-gray-100 text-gray-700 dark:bg-gray-800 dark:text-gray-200",
-  MySQL: "bg-orange-100 text-orange-700 dark:bg-orange-900 dark:text-orange-200",
-  Laravel: "bg-red-100 text-red-700 dark:bg-red-900 dark:text-red-200",
-  "C#": "bg-green-100 text-green-700 dark:bg-green-900 dark:text-green-200",
-  "Asp.NET": "bg-purple-100 text-purple-700 dark:bg-purple-900 dark:text-purple-200",
+  // Languages
   JavaScript: "bg-yellow-100 text-yellow-700 dark:bg-yellow-900 dark:text-yellow-200",
-}
+  TypeScript: "bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200",
+  Python: "bg-green-100 text-green-700 dark:bg-green-900 dark:text-green-200",
+  Java: "bg-red-100 text-red-700 dark:bg-red-900 dark:text-red-200",
+  Go: "bg-cyan-100 text-cyan-700 dark:bg-cyan-900 dark:text-cyan-200",
+  Dart: "bg-sky-100 text-sky-700 dark:bg-sky-900 dark:text-sky-200",
+  PHP: "bg-purple-100 text-purple-700 dark:bg-purple-900 dark:text-purple-200",
+  C: "bg-gray-100 text-gray-700 dark:bg-gray-800 dark:text-gray-200",
+  "C++": "bg-blue-200 text-blue-800 dark:bg-blue-950 dark:text-blue-300",
+  "C#": "bg-green-100 text-green-700 dark:bg-green-900 dark:text-green-200",
+  Ruby: "bg-red-200 text-red-800 dark:bg-red-950 dark:text-red-300",
+
+  // Frameworks & Libraries
+  React: "bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200",
+  "Next.js": "bg-black text-white dark:bg-white dark:text-black",
+  Vue: "bg-green-200 text-green-800 dark:bg-green-950 dark:text-green-300",
+  Angular: "bg-red-200 text-red-800 dark:bg-red-950 dark:text-red-300",
+  Flutter: "bg-sky-100 text-sky-700 dark:bg-sky-900 dark:text-sky-200",
+  "Express.js": "bg-gray-100 text-gray-700 dark:bg-gray-800 dark:text-gray-200",
+  Laravel: "bg-red-100 text-red-700 dark:bg-red-900 dark:text-red-200",
+  Tailwind: "bg-teal-100 text-teal-700 dark:bg-teal-900 dark:text-teal-200",
+
+  // Backend Technologies
+  Node: "bg-green-200 text-green-800 dark:bg-green-950 dark:text-green-300",
+  Golang: "bg-cyan-100 text-cyan-700 dark:bg-cyan-900 dark:text-cyan-200",
+  "ASP.NET": "bg-purple-100 text-purple-700 dark:bg-purple-900 dark:text-purple-200",
+  "Spring Boot": "bg-green-300 text-green-900 dark:bg-green-950 dark:text-green-300",
+  FastAPI: "bg-emerald-100 text-emerald-700 dark:bg-emerald-900 dark:text-emerald-200",
+
+  // Databases
+  MySQL: "bg-orange-100 text-orange-700 dark:bg-orange-900 dark:text-orange-200",
+  PostgreSQL: "bg-blue-200 text-blue-800 dark:bg-blue-950 dark:text-blue-300",
+  MongoDB: "bg-green-200 text-green-800 dark:bg-green-950 dark:text-green-300",
+  SQLite: "bg-gray-200 text-gray-700 dark:bg-gray-800 dark:text-gray-300",
+  Redis: "bg-red-200 text-red-800 dark:bg-red-950 dark:text-red-300",
+  Firebase: "bg-yellow-200 text-yellow-800 dark:bg-yellow-950 dark:text-yellow-300",
+
+  // Mobile
+  Kotlin: "bg-purple-200 text-purple-800 dark:bg-purple-950 dark:text-purple-300",
+  Swift: "bg-orange-200 text-orange-800 dark:bg-orange-950 dark:text-orange-300",
+
+  // DevOps
+  Docker: "bg-blue-200 text-blue-800 dark:bg-blue-950 dark:text-blue-300",
+  Kubernetes: "bg-indigo-200 text-indigo-800 dark:bg-indigo-950 dark:text-indigo-300",
+  Git: "bg-orange-200 text-orange-800 dark:bg-orange-950 dark:text-orange-300",
+  GitHub: "bg-gray-200 text-gray-900 dark:bg-gray-800 dark:text-white",
+  GitLab: "bg-orange-300 text-orange-900 dark:bg-orange-950 dark:text-orange-300",
+  Jenkins: "bg-red-300 text-red-900 dark:bg-red-950 dark:text-red-300",
+
+  // Cloud & Dev Tools
+  "Google Cloud": "bg-sky-200 text-sky-800 dark:bg-sky-950 dark:text-sky-300",
+  AWS: "bg-yellow-300 text-yellow-900 dark:bg-yellow-950 dark:text-yellow-300",
+  Azure: "bg-blue-300 text-blue-900 dark:bg-blue-950 dark:text-blue-300",
+  Postman: "bg-orange-200 text-orange-800 dark:bg-orange-950 dark:text-orange-300",
+  Figma: "bg-pink-200 text-pink-800 dark:bg-pink-950 dark:text-pink-300",
+
+  // Testing
+  Jest: "bg-green-200 text-green-900 dark:bg-green-950 dark:text-green-300",
+  Cypress: "bg-gray-200 text-gray-900 dark:bg-gray-800 dark:text-gray-300",
+};
+
 
 function ProjectModal({ project, isOpen, onClose }) {
   const [currentImageIndex, setCurrentImageIndex] = useState(0)

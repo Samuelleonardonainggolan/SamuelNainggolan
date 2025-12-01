@@ -96,15 +96,22 @@ export default function Navbar() {
       <nav className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center gap-2">
+          {/* Logo Circle */}
           <div className="w-10 h-10 rounded-full bg-slate-900 flex items-center justify-center text-white font-bold">
             SLN
           </div>
 
-          <span className="font-bold text-lg text-black dark:text-white">
+          {/* Nama lengkap hanya muncul di mobile */}
+          <span className="font-bold text-lg text-black dark:text-white block md:hidden">
             Samuel Leonardo Nainggolan
           </span>
 
+          {/* Desktop hanya menampilkan SLN (tanpa nama) */}
+          <span className="font-bold text-lg text-black dark:text-white hidden md:block">
+            SLN
+          </span>
         </div>
+
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-8">

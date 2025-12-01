@@ -9,24 +9,6 @@ export default function Experience() {
       period: "Jul 2025 - Sep 2025",
       desc: "Participated in Google Cloud Arcade 2025, completing multiple hands-on labs and earning digital skill badges. Worked with Google Cloud services including Compute Engine, Cloud Storage, IAM, Kubernetes Engine, BigQuery, and Cloud Run while achieving Diamond League status.",
     },
-    // {
-    //   role: "Software Developer",
-    //   company: "Tech Company",
-    //   period: "2023 - Present",
-    //   desc: "Building full-stack web applications with React, Node.js, and PostgreSQL. Leading frontend development and mentoring junior developers.",
-    // },
-    // {
-    //   role: "Junior Developer",
-    //   company: "Digital Agency",
-    //   period: "2022 - 2023",
-    //   desc: "Developed responsive websites and web applications. Worked with Laravel, MySQL, and JavaScript to create client solutions.",
-    // },
-    // {
-    //   role: "Internship",
-    //   company: "IT Company",
-    //   period: "2021 - 2022",
-    //   desc: "Gained hands-on experience in backend API development with Express.js. Collaborated with senior developers on multiple projects.",
-    // },
   ]
 
   return (
