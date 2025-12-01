@@ -105,11 +105,6 @@ export default function Navbar() {
           <span className="font-bold text-lg text-black dark:text-white block md:hidden">
             Samuel Leonardo Nainggolan
           </span>
-
-          {/* Desktop hanya menampilkan SLN (tanpa nama) */}
-          <span className="font-bold text-lg text-black dark:text-white hidden md:block">
-            SLN
-          </span>
         </div>
 
 
