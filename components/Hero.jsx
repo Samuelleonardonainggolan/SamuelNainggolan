@@ -30,7 +30,55 @@ export default function Hero() {
       <div className="absolute inset-0 bg-gradient-to-br from-cyan-50 to-purple-50 dark:from-slate-900 dark:to-slate-800 opacity-50" />
 
       <div className="relative max-w-6xl mx-auto px-6 w-full">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+
+        {/* MOBILE VERSION */}
+        <div className="md:hidden flex flex-col items-center text-center gap-6 mb-16">
+          {/* Foto kecil */}
+          <img
+            src="/11423001_SamuelLeonardoNainggolan.png"
+            alt="Profile"
+            className="w-28 h-28 rounded-full object-cover border border-slate-300 shadow-md"
+          />
+
+          {/* Nama */}
+          <h1 className="text-4xl font-bold leading-tight">
+            <span className="bg-gradient-to-r from-cyan-600 to-purple-600 bg-clip-text text-transparent">
+              Samuel Leonardo Nainggolan
+            </span>
+          </h1>
+
+          {/* Role typing */}
+          <div className="h-6 mt-2 text-xl font-semibold text-cyan-600 dark:text-cyan-400">
+            {displayText}
+            <span className="animate-pulse">|</span>
+          </div>
+
+          {/* Deskripsi */}
+          <p className="text-base text-slate-600 dark:text-slate-300 leading-relaxed px-2">
+            I'm a passionate Software Developer crafting innovative digital solutions. With expertise in modern web
+            technologies and a love for clean code, I transform ideas into beautiful, functional applications.
+          </p>
+
+          {/* Buttons */}
+          <div className="flex gap-4 pt-2 flex-wrap justify-center">
+            <a
+              href="#projects"
+              className="px-6 py-3 bg-gradient-to-r from-cyan-500 to-purple-600 text-white font-bold rounded-lg"
+            >
+              View Projects →
+            </a>
+            <a
+              href="#contact"
+              className="px-6 py-3 border-2 border-cyan-600 text-cyan-600 dark:text-cyan-400 font-bold rounded-lg"
+            >
+              Get in Touch
+            </a>
+          </div>
+        </div>
+
+        {/* DESKTOP VERSION */}
+        <div className="hidden md:grid md:grid-cols-2 gap-12 items-center">
+          
           {/* Left Content */}
           <div className="space-y-8 z-10">
             <div>
@@ -66,7 +114,7 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Right Image */}
+          {/* Desktop Image */}
           <div className="relative flex justify-center z-10">
             <div className="relative w-80 h-80">
               <div className="absolute inset-0 bg-gradient-to-br from-cyan-500 to-purple-600 rounded-3xl blur-2xl opacity-30 animate-blob" />
@@ -79,6 +127,7 @@ export default function Hero() {
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </section>

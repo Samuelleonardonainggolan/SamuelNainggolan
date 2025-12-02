@@ -4,7 +4,6 @@ import { useState, useEffect } from "react"
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
   const [theme, setTheme] = useState("light")
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   useEffect(() => {
     const savedTheme = localStorage.getItem("theme") || "light"
@@ -16,23 +15,6 @@ export default function Navbar() {
     window.addEventListener("scroll", onScroll)
     return () => window.removeEventListener("scroll", onScroll)
   }, [])
-
-  const toggleTheme = () => {
-    const newTheme = theme === "light" ? "dark" : "light"
-    setTheme(newTheme)
-    document.documentElement.setAttribute("data-theme", newTheme)
-    localStorage.setItem("theme", newTheme)
-  }
-
-  const navLinks = [
-    { href: "#about", label: "About" },
-    { href: "#experience", label: "Experience" },
-    { href: "#projects", label: "Projects" },
-    { href: "#skills", label: "Skills" },
-    { href: "#education", label: "Education" },
-    { href: "#certificates", label: "Certificates" },
-    { href: "#contact", label: "Contact" },
-  ]
 
   const socialLinks = [
     {
@@ -88,106 +70,45 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed w-full z-50 transition-all duration-300 ${scrolled
-        ? "backdrop-blur-20 bg-white/95 shadow-md dark:bg-slate-900/95 dark:border-b dark:border-slate-800"
-        : "bg-transparent"
-        }`}
+      className={`fixed w-full z-50 transition-all duration-300 ${
+        scrolled
+          ? "backdrop-blur-20 bg-white/95 shadow-md dark:bg-slate-900/95 dark:border-b dark:border-slate-800"
+          : "bg-transparent"
+      }`}
     >
       <nav className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-        {/* Logo */}
+
+        {/* Logo + Nama */}
         <div className="flex items-center gap-2">
-          {/* Logo Circle */}
           <div className="w-10 h-10 rounded-full bg-slate-900 flex items-center justify-center text-white font-bold">
             SLN
           </div>
 
-          {/* Nama lengkap hanya muncul di mobile */}
-          <span className="font-bold text-lg text-black dark:text-white block md:hidden">
+          {/* Nama hanya tampil di mobile */}
+          {/* <span className="font-bold text-lg text-black dark:text-white block md:hidden">
             Samuel Leonardo Nainggolan
-          </span>
+          </span> */}
         </div>
 
-
-        {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center gap-8">
-          {navLinks.map((link) => (
+        {/* Social Icons (Tetap Ada Garis Vertikal) */}
+        <div className="flex items-center gap-2 pl-2 border-l border-slate-200 dark:border-slate-700">
+          {socialLinks.map((social) => (
             <a
-              key={link.href}
-              href={link.href}
-              className="text-sm font-semibold text-slate-700 dark:text-slate-300 uppercase tracking-wide hover:text-cyan-600 dark:hover:text-cyan-400 transition relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-gradient-to-r after:from-cyan-500 after:to-purple-600 after:transition-all hover:after:w-full"
+              key={social.label}
+              href={social.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-9 h-9 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center 
+              text-slate-700 dark:text-slate-300 hover:bg-gradient-to-br hover:from-cyan-500 hover:to-purple-600 
+              hover:text-white transition transform hover:scale-110"
+              title={social.label}
             >
-              {link.label}
+              {social.icon}
             </a>
           ))}
         </div>
 
-        {/* Actions */}
-        <div className="flex items-center gap-3">
-          <div className="hidden lg:flex items-center gap-2 mr-2 pl-2 border-l border-slate-200 dark:border-slate-700">
-            {socialLinks.map((social) => (
-              <a
-                key={social.label}
-                href={social.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-9 h-9 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-700 dark:text-slate-300 hover:bg-gradient-to-br hover:from-cyan-500 hover:to-purple-600 hover:text-white transition transform hover:scale-110"
-                title={social.label}
-              >
-                {social.icon}
-              </a>
-            ))}
-          </div>
-
-          {/* <button
-            onClick={toggleTheme}
-            className="w-10 h-10 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 transition hover:text-cyan-600 dark:hover:text-cyan-400"
-            aria-label="Toggle theme"
-          >
-            {theme === "light" ? "🌙" : "☀️"}
-          </button> */}
-
-          {/* Mobile Menu Button */}
-          <button
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="md:hidden w-10 h-10 rounded bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 transition"
-            aria-label="Toggle menu"
-          >
-            {mobileMenuOpen ? "✕" : "☰"}
-          </button>
-        </div>
       </nav>
-
-      {/* Mobile Navigation */}
-      {mobileMenuOpen && (
-        <div className="md:hidden bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800">
-          <div className="px-6 py-4 space-y-3">
-            {navLinks.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                onClick={() => setMobileMenuOpen(false)}
-                className="block text-sm font-semibold text-slate-700 dark:text-slate-300 uppercase tracking-wide hover:text-cyan-600 dark:hover:text-cyan-400 transition"
-              >
-                {link.label}
-              </a>
-            ))}
-            <div className="pt-4 border-t border-slate-200 dark:border-slate-700 flex gap-2">
-              {socialLinks.map((social) => (
-                <a
-                  key={social.label}
-                  href={social.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-9 h-9 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-700 dark:text-slate-300 hover:bg-gradient-to-br hover:from-cyan-500 hover:to-purple-600 hover:text-white transition"
-                  title={social.label}
-                >
-                  {social.icon}
-                </a>
-              ))}
-            </div>
-          </div>
-        </div>
-      )}
     </header>
   )
 }
