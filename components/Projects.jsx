@@ -31,9 +31,9 @@ const projects = [
       "/Screenshot 2025-11-26 092823.png?height=400&width=800&query=education-system-4",
       "/Screenshot 2025-11-26 092935.png?height=400&width=800&query=education-system-5",
       "/Picture3.png?height=400&width=800&query=education-system-6",
-      "/Picture1_Picture2.png?height=400&width=800&query=education-system-7",
+      "/Picture1_Picture2.jpeg?height=400&width=800&query=education-system-7",
       "/Picture6.png?height=400&width=800&query=education-system-8",
-      "/Picture4_Picture5.png?height=400&width=800&query=education-system-9",
+      "/Picture4_Picture5.jpeg?height=400&width=800&query=education-system-9",
     ],
   },
 ]
